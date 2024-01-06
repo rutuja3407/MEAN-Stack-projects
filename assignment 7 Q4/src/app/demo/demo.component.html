@@ -1,0 +1,17 @@
+<h2>In Demo component</h2>
+
+<button (click) = "UpperClicked()">Upper</button>
+
+<button (click) = "LowerClicked()">Lower</button>
+
+<div *ngIf = "isUpper ; then upperblock"></div>
+
+<div *ngIf = "isLower ; then lowerblock"></div>
+
+<ng-template #upperblock>
+    <h2>{{Name | uppercase}}</h2>
+  </ng-template>
+
+  <ng-template #lowerblock>
+    <h2>{{Name | lowercase}}</h2>
+  </ng-template>

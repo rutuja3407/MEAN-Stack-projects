@@ -1,0 +1,9 @@
+<h1>Assignment 8 Q2</h1>
+
+<app-child (LaserLight) = 'GetFromChild = $event'></app-child>
+
+<app-child [GetFromParent] = "SendToChild"></app-child>
+
+<h2>Data received from child component to parent component: {{GetFromChild}}</h2>
+
+<router-outlet></router-outlet>
